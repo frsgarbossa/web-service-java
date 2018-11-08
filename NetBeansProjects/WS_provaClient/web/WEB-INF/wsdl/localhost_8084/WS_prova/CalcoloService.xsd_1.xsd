@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://calcolo.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://calcolo.com/">
+
+<xs:element name="AuthTest" type="tns:AuthTest" />
+
+<xs:element name="AuthTestResponse" type="tns:AuthTestResponse" />
+
+<xs:element name="hello" type="tns:hello" />
+
+<xs:element name="helloResponse" type="tns:helloResponse" />
+
+<xs:element name="restart" type="tns:restart" />
+
+<xs:element name="restartResponse" type="tns:restartResponse" />
+
+<xs:element name="somma" type="tns:somma" />
+
+<xs:element name="sommaResponse" type="tns:sommaResponse" />
+
+<xs:complexType name="AuthTest">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="AuthTestResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="restart">
+<xs:sequence>
+<xs:element name="a" type="xs:double" />
+<xs:element name="b" type="xs:double" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="restartResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="somma">
+<xs:sequence>
+<xs:element name="a" type="xs:double" />
+<xs:element name="b" type="xs:double" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sommaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
